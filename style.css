@@ -1,0 +1,278 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+ 
+html{
+scroll-behavior:smooth;
+}
+ 
+body{
+background:#060816;
+color:#fff;
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
+min-height:100vh;
+}
+ 
+.blur{
+position:fixed;
+border-radius:50%;
+filter:blur(140px);
+z-index:-1;
+}
+ 
+.blur-1{
+width:500px;
+height:500px;
+background:#2563eb;
+top:-200px;
+left:-100px;
+}
+ 
+.blur-2{
+width:500px;
+height:500px;
+background:#9333ea;
+top:300px;
+right:-150px;
+}
+ 
+.blur-3{
+width:400px;
+height:400px;
+background:#06b6d4;
+bottom:-100px;
+left:40%;
+}
+ 
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 8%;
+position:sticky;
+top:0;
+backdrop-filter:blur(25px);
+background:rgba(255,255,255,.03);
+border-bottom:1px solid rgba(255,255,255,.08);
+z-index:1000;
+}
+ 
+.logo{
+font-weight:800;
+letter-spacing:3px;
+}
+ 
+nav{
+display:flex;
+gap:30px;
+}
+ 
+nav a{
+text-decoration:none;
+color:#fff;
+opacity:.8;
+transition:.3s;
+}
+ 
+nav a:hover{
+opacity:1;
+}
+ 
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(25px);
+border:1px solid rgba(255,255,255,.12);
+box-shadow:
+0 20px 50px rgba(0,0,0,.35);
+border-radius:30px;
+}
+ 
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+ 
+.hero-card{
+max-width:900px;
+text-align:center;
+padding:80px 60px;
+}
+ 
+.badge{
+display:inline-block;
+padding:12px 20px;
+background:rgba(255,255,255,.08);
+border-radius:999px;
+margin-bottom:25px;
+}
+ 
+.hero h1{
+font-size:72px;
+line-height:1;
+margin-bottom:25px;
+background:linear-gradient(
+90deg,
+#60a5fa,
+#c084fc,
+#22d3ee
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+ 
+.hero p{
+max-width:650px;
+margin:auto;
+opacity:.8;
+line-height:1.9;
+}
+ 
+.cta{
+margin-top:40px;
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+ 
+.btn-primary{
+padding:15px 28px;
+border-radius:14px;
+text-decoration:none;
+color:white;
+background:linear-gradient(
+135deg,
+#3b82f6,
+#9333ea
+);
+}
+ 
+.btn-secondary{
+padding:15px 28px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,.2);
+text-decoration:none;
+color:white;
+}
+ 
+section{
+padding:120px 8%;
+}
+ 
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:42px;
+}
+ 
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+ 
+.card{
+padding:40px;
+text-align:center;
+}
+ 
+.card h3{
+color:#60a5fa;
+margin-bottom:15px;
+}
+ 
+.card p{
+font-size:42px;
+font-weight:700;
+}
+ 
+.about-box{
+max-width:1000px;
+margin:auto;
+padding:60px;
+}
+ 
+.about-box p{
+text-align:center;
+line-height:2;
+opacity:.85;
+}
+ 
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+ 
+.project{
+padding:35px;
+transition:.3s;
+}
+ 
+.project:hover{
+transform:translateY(-10px);
+}
+ 
+.project h3{
+margin-bottom:15px;
+color:#60a5fa;
+}
+ 
+.project p{
+opacity:.8;
+margin-bottom:20px;
+}
+ 
+.project a{
+color:#22d3ee;
+text-decoration:none;
+}
+ 
+.contact{
+max-width:700px;
+margin:auto;
+text-align:center;
+padding:60px;
+}
+ 
+.contact p{
+margin-top:16px;
+}
+ 
+footer{
+text-align:center;
+padding:40px;
+opacity:.5;
+}
+ 
+@media(max-width:768px){
+ 
+.hero h1{
+font-size:44px;
+}
+ 
+.hero-card{
+padding:50px 30px;
+}
+ 
+nav{
+display:none;
+}
+ 
+section h2{
+font-size:32px;
+}
+ 
+}
+Jak uruchomić
+Plain Text
+portfolio/
+│
+├── index.html
+└── style.css
